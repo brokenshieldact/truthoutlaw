@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "/"
+display_url: "/"
+logo_url: "/assets/truthoutlaw-logo.jpg"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "src/articles"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title", "category"]
+    summary: "{{date}} — {{title}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "article.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Author", name: "author", widget: "string", required: false, default: "TruthOutlaw" }
+      - { label: "Category", name: "category", widget: "string", required: false, default: "Investigation" }
+      - { label: "Summary", name: "summary", widget: "text", hint: "Two or three sentences for the home page and timeline." }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Image Description", name: "image_alt", widget: "string", required: false }
+      - label: "Sources"
+        name: "sources"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Source Name", name: "label", widget: "string" }
+          - { label: "Source URL", name: "url", widget: "string" }
+      - { label: "Article", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Main Settings"
+        name: "site"
+        file: "src/_data/site.json"
+        format: "json"
+        fields:
+          - { label: "Site Name", name: "name", widget: "string" }
+          - { label: "Homepage Tagline", name: "tagline", widget: "string" }
+          - { label: "Site Description", name: "description", widget: "text" }
+          - { label: "Submission Email", name: "email", widget: "string" }
+          - { label: "Cash App", name: "cashApp", widget: "string", hint: "Include the dollar sign." }

@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Timeline
+permalink: /timeline/index.html
+---
+<section class="page-hero">
+  <p class="eyebrow">Chronological archive</p>
+  <h1>Timeline</h1>
+  <p>Every published article appears here automatically by date.</p>
+</section>
+
+<section class="section alt">
+  <div class="timeline">
+    {% for article in collections.articles %}
+    <article class="timeline-item">
+      <time datetime="{{ article.date | isoDate }}">{{ article.date | readableDate }}</time>
+      <p class="category">{{ article.data.category or "Investigation" }}</p>
+      <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
+      <p>{{ article.data.summary }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+<article class="article-page">
+  <header class="article-header">
+    <p class="eyebrow">{{ category or "Investigation" }}</p>
+    <h1>{{ title }}</h1>
+    <div class="article-meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      {% if author %}<span>By {{ author }}</span>{% endif %}
+    </div>
+    {% if summary %}<p class="dek">{{ summary }}</p>{% endif %}
+    {% if featured_image %}
+      <img class="featured-image" src="{{ featured_image }}" alt="{{ image_alt or title }}">
+    {% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+
+  {% if sources %}
+  <section class="sources">
+    <h2>Sources</h2>
+    <ul>
+      {% for source in sources %}
+      <li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>

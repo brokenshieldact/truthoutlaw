@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | {{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="{{ site.name }} home">
+      <img src="/assets/truthoutlaw-logo.jpg" alt="{{ site.name }} logo">
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="/#articles">Articles</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/submit/">Submit</a>
+      <a href="/support/">Support</a>
+      <a class="admin-link" href="/admin/">Writer Login</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <img src="/assets/truthoutlaw-logo.jpg" alt="">
+    <p>{{ site.name }} © <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user && window.location.hash.includes("invite_token")) {
+          window.netlifyIdentity.open("signup");
+        }
+      });
+      window.netlifyIdentity.on("login", () => {
+        window.location.href = "/admin/";
+      });
+    }
+  </script>
+</body>
+</html>

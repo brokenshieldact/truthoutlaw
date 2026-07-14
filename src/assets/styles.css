@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Oswald:wght@500;600&display=swap');
+
+:root {
+  --black: #090909;
+  --ink: #151515;
+  --cream: #f5f0e6;
+  --gold: #c89b3c;
+  --gold-light: #e4c36f;
+  --muted: #b9b3aa;
+  --border: rgba(200, 155, 60, .35);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Libre Franklin", Arial, sans-serif;
+  color: var(--cream);
+  background: var(--black);
+  line-height: 1.65;
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+.hidden { display: none; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: .75rem clamp(1rem, 4vw, 4rem);
+  background: rgba(9,9,9,.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+.brand img { width: 175px; height: 58px; object-fit: cover; border-radius: 3px; }
+nav { display: flex; flex-wrap: wrap; gap: .8rem 1.2rem; align-items: center; }
+nav a { text-decoration: none; font-weight: 800; font-size: .9rem; }
+nav a:hover { color: var(--gold-light); }
+.admin-link { padding: .45rem .7rem; border: 1px solid var(--gold); color: var(--gold-light); }
+
+.hero {
+  min-height: 650px;
+  display: grid;
+  place-items: center;
+  padding: 5rem clamp(1rem, 6vw, 6rem);
+  background:
+    linear-gradient(rgba(0,0,0,.52), rgba(0,0,0,.92)),
+    url("/assets/truthoutlaw-logo.jpg") center / cover no-repeat;
+}
+.hero-overlay {
+  width: min(900px,100%);
+  text-align: center;
+  padding: clamp(2rem,5vw,4rem);
+  background: rgba(9,9,9,.74);
+  border: 1px solid var(--border);
+}
+.page-hero {
+  padding: 6rem clamp(1rem, 6vw, 6rem) 4rem;
+  background: linear-gradient(135deg,#17120a,#090909);
+}
+h1,h2,h3 {
+  margin: 0 0 1rem;
+  font-family: "Oswald", Impact, sans-serif;
+  line-height: 1.08;
+  letter-spacing: .02em;
+}
+h1 { font-size: clamp(3rem,8vw,6rem); text-transform: uppercase; }
+h2 { font-size: clamp(2rem,5vw,3.8rem); text-transform: uppercase; }
+h3 { font-size: 1.5rem; }
+.eyebrow,.category {
+  margin: 0 0 .6rem;
+  color: var(--gold-light);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.hero-copy,.dek { max-width: 720px; margin: 0 auto 2rem; font-size: 1.16rem; }
+.button-row,.section-action { display:flex; justify-content:center; gap:.8rem; flex-wrap:wrap; }
+.button {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:48px;
+  padding:.75rem 1.15rem;
+  border:1px solid var(--gold);
+  text-decoration:none;
+  font-weight:800;
+  cursor:pointer;
+}
+.button.primary { color:var(--black); background:var(--gold); }
+.button.primary:hover { background:var(--gold-light); }
+.button.secondary { color:var(--gold-light); background:transparent; }
+.section { padding:5rem clamp(1rem,6vw,6rem); }
+.section.alt { background:var(--ink); }
+.section-heading { max-width:760px; margin-bottom:2rem; }
+
+.article-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1rem;
+}
+.article-card {
+  display:flex;
+  flex-direction:column;
+  min-height:360px;
+  background:var(--ink);
+  border:1px solid var(--border);
+}
+.article-card img { width:100%; height:190px; object-fit:cover; }
+.article-card-copy { display:flex; flex:1; flex-direction:column; padding:1.4rem; }
+.article-card time,.timeline time { color:var(--gold-light); font-weight:800; font-size:.86rem; }
+.article-card h3 a,.timeline h2 a { text-decoration:none; }
+.article-card h3 a:hover,.timeline h2 a:hover { color:var(--gold-light); }
+.article-card p { color:#d6d0c6; }
+.read-link { margin-top:auto; color:var(--gold-light); font-weight:800; }
+.section-action { margin-top:2rem; }
+
+.timeline { max-width:960px; padding-left:2rem; border-left:2px solid var(--gold); }
+.timeline-item { position:relative; margin-bottom:2.4rem; padding-left:1rem; }
+.timeline-item::before {
+  content:"";
+  position:absolute;
+  left:-2.42rem;
+  top:.35rem;
+  width:.72rem;
+  height:.72rem;
+  border-radius:50%;
+  background:var(--gold-light);
+}
+.timeline-item h2 { font-size:clamp(1.8rem,3vw,2.7rem); }
+
+.split {
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:clamp(2rem,6vw,6rem);
+  align-items:start;
+}
+.submission-form {
+  display:grid;
+  gap:1rem;
+  padding:1.5rem;
+  background:var(--ink);
+  border:1px solid var(--border);
+}
+label { display:grid; gap:.35rem; font-weight:700; }
+input,textarea {
+  width:100%;
+  padding:.8rem;
+  color:var(--cream);
+  background:#080808;
+  border:1px solid #4b4438;
+  font:inherit;
+}
+input:focus,textarea:focus { outline:2px solid var(--gold); outline-offset:2px; }
+.fine-print { color:var(--muted); font-size:.9rem; }
+
+.support-page { display:grid; place-items:center; min-height:400px; }
+.cash-card { width:min(480px,100%); padding:2rem; text-align:center; border:1px solid var(--gold); }
+.cash-card span { display:block; color:var(--gold-light); text-transform:uppercase; font-weight:800; }
+.cash-card strong { display:block; margin:.5rem 0 1.4rem; font-size:2rem; }
+
+.article-page { width:min(900px,100%); margin:0 auto; padding:5rem 1.2rem; }
+.article-header { margin-bottom:2.5rem; }
+.article-meta { display:flex; gap:1rem; flex-wrap:wrap; color:var(--gold-light); font-weight:700; }
+.article-page .dek { margin:1.3rem 0 2rem; }
+.featured-image { width:100%; max-height:520px; object-fit:cover; border:1px solid var(--border); }
+.article-body { font-size:1.08rem; }
+.article-body h2 { margin-top:2.4rem; font-size:2rem; }
+.article-body a,.sources a { color:var(--gold-light); }
+.sources { margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border); }
+.sources h2 { font-size:2rem; }
+
+footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:2rem clamp(1rem,6vw,6rem);
+  border-top:1px solid var(--border);
+}
+footer img { width:130px; height:46px; object-fit:cover; }
+
+@media (max-width:820px) {
+  .site-header { align-items:flex-start; flex-direction:column; gap:.65rem; }
+  .hero { min-height:560px; }
+  .article-grid,.split { grid-template-columns:1fr; }
+}

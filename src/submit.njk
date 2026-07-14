@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: Submit Information
+permalink: /submit/index.html
+---
+<section class="page-hero">
+  <p class="eyebrow">Community submissions</p>
+  <h1>Send a tip or article</h1>
+  <p>Share a correction, document, source link, article idea, or timeline entry.</p>
+</section>
+
+<section class="section split">
+  <div>
+    <h2>Help build the record</h2>
+    <p>Include clear dates, source links, names, and any context needed to understand the information.</p>
+    <p class="fine-print">The form sends submissions through Netlify Forms. Find messages in the Netlify project under Forms.</p>
+  </div>
+
+  <form class="submission-form" name="truthoutlaw-submissions" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="truthoutlaw-submissions">
+    <p class="hidden">
+      <label>Leave this empty: <input name="bot-field"></label>
+    </p>
+    <label>
+      Name
+      <input name="name" type="text" placeholder="Optional">
+    </label>
+    <label>
+      Email
+      <input name="email" type="email" placeholder="Optional">
+    </label>
+    <label>
+      Subject
+      <input name="subject" type="text" required placeholder="What is this about?">
+    </label>
+    <label>
+      Information
+      <textarea name="message" rows="9" required placeholder="Include dates, links, sources, and relevant details."></textarea>
+    </label>
+    <button class="button primary" type="submit">Send submission</button>
+  </form>
+</section>
