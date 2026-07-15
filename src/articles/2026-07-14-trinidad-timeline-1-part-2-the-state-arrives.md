@@ -12,7 +12,9 @@ summary: "Part II: The State Arrives follows the Texas Commission on
   the criminal investigation into Jennifer Combs' Facebook post and the timeline
   leading to her arrest."
 featured_image: /assets/uploads/1000030924.png
-sources: []
+sources:
+  - url: https://drive.google.com/drive/folders/1u4XWH2pLYpLwFTS5WUNu1DxkrrkV7YEe
+    label: "Trinidad investigation "
 ---
 THE TRINIDAD FILES
 
