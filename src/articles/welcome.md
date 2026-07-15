@@ -9,15 +9,7 @@ summary: |-
   Follow the facts wherever they lead.
 featured_image: /assets/truthoutlaw-logo.jpg
 image_alt: TruthOutlaw logo
-sources:
-  - label: "SOURCES Every article includes source material whenever available.
-      Examples include: • Court records • Police reports • Search warrants •
-      Arrest affidavits • Government investigations • Open Records requests •
-      Meeting agendas and minutes • Audio and video recordings • Official public
-      statements • State and federal agency documents • Direct interviews
-      Whenever possible, original documents are linked so readers can review the
-      evidence for themselves."
-    url: https://example.com
+sources: []
 ---
 
 
