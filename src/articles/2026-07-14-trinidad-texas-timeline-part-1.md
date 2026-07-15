@@ -8,9 +8,7 @@ summary: >-
   
   The Story Did Not Begin With a Facebook Post examines the documented timeline leading up to Jennifer Combs' arrest, showing that the Texas Commission on Environmental Quality (TCEQ) had already received multiple complaints about Trinidad's brown drinking water and opened its own investigation before her Facebook post was published. The article follows the parallel investigations by state regulators and local police, using official records, affidavits, and court documents to compare their timelines and actions. 
 featured_image: /assets/uploads/1000030924.png
-sources:
-  - url: https://docs.google.com/document/d/1D_fh67g8Lc4Urpuh7jInJetw6urs1Nxb/edit?usp=drivesdk&ouid=104483473316631242392&rtpof=true&sd=true
-    label: "TCEQ Investigation/ Trinidad arrest warrant affidavit "
+sources: []
 ---
 The Story Did Not Begin With a Facebook Post
 
