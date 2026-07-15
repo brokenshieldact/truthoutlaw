@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: "Trinidad texas timeline part 1. "
+title: "Trinidad texas timeline part 1. The water "
 date: 2026-07-14
 author: TruthOutlaw
 category: Investigation
