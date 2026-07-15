@@ -18,7 +18,7 @@ By Jennifer Combs | TruthOutlaw
 
 TRINIDAD, Texas — What had been growing concerns behind the scenes at Trinidad City Hall has now become a public dispute.
 
-Newly elected Trinidad City Council Member Steven Stearman has formally requested the resignation of City Administrator Cynthia Dozier after releasing a letter outlining what he describes as a complete loss of confidence in her leadership. His request comes alongside the release of numerous text message conversations between the two that provide insight into months of discussions regarding the City's finances, overdue audit, grant funding, engineering projects, records requests, and the day-to-day operation of City Hall.
+Newly elected Trinidad City Council Member Steven Stearman has formally requested the resignation of City Administrator Cynthia Dosier after releasing a letter outlining what he describes as a complete loss of confidence in her leadership. His request comes alongside the release of numerous text message conversations between the two that provide insight into months of discussions regarding the City's finances, overdue audit, grant funding, engineering projects, records requests, and the day-to-day operation of City Hall.
 
 Stearman publicly announced his request by stating:
 
@@ -44,7 +44,7 @@ What he describes as a pattern of communication and decision-making that resulte
 
 Stearman writes that the citizens of Trinidad deserve an administration that is transparent, responsive, accountable, and focused on carrying out the priorities established by the elected City Council.
 
-He concludes the letter by requesting Dozier's voluntary resignation and states that if she declines, he intends to ask the City Council to evaluate her continued employment in accordance with applicable law, City policies, and contractual obligations.
+He concludes the letter by requesting Dosier's voluntary resignation and states that if she declines, he intends to ask the City Council to evaluate her continued employment in accordance with applicable law, City policies, and contractual obligations.
 
 The Text Messages
 
@@ -56,7 +56,7 @@ Throughout the conversations, Stearman repeatedly asks about the status of the C
 
 His focus remains largely on completing projects that he believes are essential to improving the City's financial standing and positioning Trinidad for future opportunities.
 
-Dozier responds that she is balancing numerous responsibilities, including preparing agendas, completing meeting minutes, handling permits, responding to litigation-related matters, and managing the daily operations of City Hall.
+Dosier responds that she is balancing numerous responsibilities, including preparing agendas, completing meeting minutes, handling permits, responding to litigation-related matters, and managing the daily operations of City Hall.
 
 At one point she explains that she has priorities and tells Stearman that city business "doesn't happen overnight."
 
@@ -84,7 +84,7 @@ Politics vs. City Business
 
 The conversations eventually move beyond audits and city finances.
 
-In several exchanges, Dozier shares her personal views regarding political conflicts involving City officials, former employees, and members of the community. She also references investigative reporter Jennifer Combs while expressing her opinions about the motivations behind ongoing public criticism.
+In several exchanges, Dosier shares her personal views regarding political conflicts involving City officials, former employees, and members of the community. She also references investigative reporter Jennifer Combs while expressing her opinions about the motivations behind ongoing public criticism.
 
 Rather than engaging in those political discussions, Stearman redirects the conversation back to City business.
 
@@ -98,7 +98,7 @@ Public Statements Raise Additional Questions
 
 The concerns outlined in Stearman's resignation letter are not limited to the text messages.
 
-During a public Trinidad City Council meeting, Dozier stated that expenditures had been made without prior City Council approval and acknowledged that she did not know exactly what some of those expenditures were for.
+During a public Trinidad City Council meeting, Dosier stated that expenditures had been made without prior City Council approval and acknowledged that she did not know exactly what some of those expenditures were for.
 
 Those statements, made during a public meeting, have become another point of concern for residents questioning the City's financial oversight.
 
@@ -118,7 +118,7 @@ His resignation request reflects that conclusion.
 
 What Happens Next
 
-As of publication, Cynthia Dozier has not publicly responded to Stearman's resignation request beyond the released text message conversations.
+As of publication, Cynthia Dosier has not publicly responded to Stearman's resignation request beyond the released text message conversations.
 
 Whether she chooses to resign remains unknown.
 
