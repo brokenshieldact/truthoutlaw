@@ -14,7 +14,7 @@ summary: "Part II: The State Arrives follows the Texas Commission on
 featured_image: /assets/uploads/1000030924.png
 sources:
   - url: https://drive.google.com/drive/folders/1u4XWH2pLYpLwFTS5WUNu1DxkrrkV7YEe
-    label: "Trinidad investigation "
+    label: "Trinidad folder "
 ---
 THE TRINIDAD FILES
 
