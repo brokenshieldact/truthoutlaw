@@ -18,7 +18,41 @@ layout: base.njk
   <div class="article-body">
     {{ content | safe }}
   </div>
+<div class="article-share">
+  <button type="button" id="share-article">
+    Share this article
+  </button>
 
+  <span id="share-status" aria-live="polite"></span>
+</div>
+
+<script>
+  const shareButton = document.getElementById("share-article");
+  const shareStatus = document.getElementById("share-status");
+
+  shareButton.addEventListener("click", async () => {
+    const description =
+      document.querySelector('meta[name="description"]')?.content ||
+      document.title;
+
+    const shareDetails = {
+      title: document.title,
+      text: description,
+      url: window.location.href
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareDetails);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        shareStatus.textContent = "Article link copied!";
+      }
+    } catch (error) {
+      shareStatus.textContent = "Please copy the page address from your browser.";
+    }
+  });
+</script>
   {% if sources %}
   <section class="sources">
     <h2>Sources</h2>
