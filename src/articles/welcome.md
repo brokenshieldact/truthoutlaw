@@ -11,13 +11,9 @@ featured_image: /assets/truthoutlaw-logo.jpg
 image_alt: TruthOutlaw logo
 sources: []
 ---
+Welcome to TruthOutlaw. 
 
-
-Welcome to TruthOutlaw
-
-Welcome to TruthOutlaw.
-
-I'm Jennifer Combs—an investigative reporter, published author, business owner, wife, mother, and grandmother with a passion for uncovering the truth.
+I'm Jennifer Combs an investigative reporter, published author, business owner, wife, mother, and grandmother with a passion for uncovering the truth.
 
 TruthOutlaw was born from one of the most difficult experiences of my life. After speaking out and reporting on concerns about a city's water supply, I was arrested. That experience changed my life and reinforced my belief that asking questions, examining public records, and holding government accountable are essential in a free society.
 
@@ -36,9 +32,5 @@ If you'd like to support independent investigative journalism, click the Support
 Thank you for visiting TruthOutlaw.
 
 Because the truth should never be silenced. It should be investigated.
-
-
-
-
 
 Truth isn't determined by opinions. It's proven through evidence.
