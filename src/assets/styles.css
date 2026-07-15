@@ -189,3 +189,31 @@ footer img { width:130px; height:46px; object-fit:cover; }
   .hero { min-height:560px; }
   .article-grid,.split { grid-template-columns:1fr; }
 }
+
+.article-share {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.article-share button {
+  padding: 0.85rem 1.4rem;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  background: var(--black);
+  color: var(--gold-light);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.article-share button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+#share-status {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--gold-light);
+  font-size: 0.9rem;
+}
